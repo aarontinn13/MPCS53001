@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Access Bodybuilding Database</title>
+</head>
+
+<body style="background-color:MediumSeaGreen; font-family:verdana;">
+
+<h1>Welcome to MyFitnessFriend</h1>
+
+
+
+<hr>
+<!-- 1. list all tables -->
+<p style="font-family:verdana;">
+1. A link to a php script (<tt>show_all_tables.php</tt>)
+ that list all tables in the database:
+ <p>
+<p>
+<a href="https://mpcs53001.cs.uchicago.edu/~atinn/show_all_tables.php">List all tables in Database !</a>
+<p>
+
+
+
+
+
+<hr>
+<!-- 2. Show all Workouts by Rating-->
+<p style="font-family:verdana;">
+2. A link to a php script (<tt>list_workouts_by_rating.php</tt>)
+ that displays all the workouts in the database by highest to lowest rating:
+ <p>
+<p>
+<a href="https://mpcs53001.cs.uchicago.edu/~atinn/list_workouts_by_rating.php"> Workouts by Rating</a>
+<p>
+
+
+
+
+
+<hr>
+<!-- 3. Search Person in table-->
+<p style="font-family:verdana;">
+3. Search and retrieve all attributes of a Person.
+The script that runs when you press the <it>Search</it> button is
+ <tt>search_user.php<tt>.
+<p>
+<form method=get action="https://mpcs53001.cs.uchicago.edu/~atinn/search_user.php">
+<b>Search Email (ex: "abc123@email.com"):</b><br>
+<input type="text" name="Email"><br>
+<input type="submit" value="Search">
+</form>
+
+
+
+
+
+<hr>
+<!-- 4. Search meal by keyword-->
+<p style="font-family:verdana;">
+4. Show all meals and nutrition info with a given keyword (servings in 100g).
+The script that runs when you search a Meal name is <tt>search_meal.php<tt>.
+<p>
+<form method=get action="https://mpcs53001.cs.uchicago.edu/~atinn/search_meal.php">
+<b>Search Meal by keyword (ex: "beef"):</b><br>
+<input type="text" name="Meal"><br>
+<input type="submit" value="Search">
+</form>
+
+
+
+
+
+<hr>
+<!-- 5. Search Activity by person-->
+<p style="font-family:verdana;">
+5. Search for all activity done by person.
+The script that runs when you search an email name is <tt>search_activity.php<tt>.
+<p>
+<form method=get action="https://mpcs53001.cs.uchicago.edu/~atinn/search_activity.php">
+<b>Search Activity by Email (ex: "abc123@email.com"):</b><br>
+<input type="text" name="Email"><br>
+<input type="submit" value="Search">
+</form>
+
+
+
+
+<hr>
+<!-- 6. Search Eating by date -->
+<p style="font-family:verdana;">
+6. Search for meals eaten between a certain date.
+The script that runs when you search for a Date interval is
+ <tt>search_eat_by_date.php<tt>.
+<p>
+<form action="https://mpcs53001.cs.uchicago.edu/~atinn/search_eat_by_date.php">
+Enter a date (start) (ex:  2017-01-01):<br>
+<input type="date" name="date1"><br><br>
+Enter a date (end) (ex:  2017-08-31):<br>
+<input type="date" name="date2"><br><br>
+<input type="submit">
+</form>
+
+
+
+
+
+<hr>
+<!-- 7. Search meals by macros -->
+<p style="font-family:verdana;">
+6. Search for meals with specified Macronutrients and Calories.
+The script that runs when you search for nutrients is
+ <tt>search_meal_by_macros.php<tt>.
+<p>
+<form action="https://mpcs53001.cs.uchicago.edu/~atinn/search_meal_by_macros.php">
+Enter amount of Calories:<br>
+<input type="number" name="Calories"><br><br>
+Enter amount of Protein:<br>
+<input type="number" name="Protein"><br><br>
+Enter amount of Fat:<br>
+<input type="number" name="Fat"><br><br>
+Enter amount of Carbohydrates:<br>
+<input type="number" name="Carbohydrates"><br><br>
+<input type="submit">
+</form>
+
+
+
+<hr>
+<!-- 8. Search Exercises by type-->
+<p style="font-family:verdana;">
+8. Show all workouts that belong to a certain type.
+The script that runs when you search a genre name is <tt>search_exercise_by_type.php<tt>.
+<p>
+<form action="https://mpcs53001.cs.uchicago.edu/~atinn/search_exercise_by_type.php">
+<b>Search workouts by type from the dropdown:</b><br>
+
+  <select name="Type">
+    <option value="Cardio">Cardio</option>
+    <option value="OlympicWeightlifting">OlympicWeightlifting</option>
+    <option value="Plyometrics">Plyometrics</option>
+    <option value="Powerlifting">Powerlifting</option>
+    <option value="Strength">Strength</option>
+    <option value="Stretching">Stretching</option>
+    <option value="Strongman">Strongman</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+<!-- 9. Search Meals by food groups-->
+<p style="font-family:verdana;">
+9. Show all meals that belong to a certain food group.
+The script that runs when you search a food group is <tt>search_meal_by_group.php<tt>.
+<p>
+<form action="https://mpcs53001.cs.uchicago.edu/~atinn/search_meal_by_group.php">
+<b>Search Meals by FoodGroups from the dropdown:</b><br>
+
+  <select name="Type">
+    <option value="Baby Foods">Baby Foods</option>
+    <option value="Baked Products">Baked Products</option>
+    <option value="Beef Products">Beef Products</option>
+    <option value="Beverages">Powerlifting</option>
+    <option value="Breakfast Cereals">Breakfast Cereals</option>
+    <option value="Cereal Grains and Pasta">Cereal Grains and Pasta</option>
+    <option value="Dairy and Egg Products">Dairy and Egg Products</option>
+    <option value="Fats and Oils">Fats and Oils</option>
+    <option value="Finfish and Shellfish Products">Finfish and Shellfish Products</option>
+    <option value="Fruits and Fruit Juices">Fruits and Fruit Juices</option>
+    <option value="Lamb, Veal, and Game Products">Lamb, Veal, and Game Products</option>
+    <option value="Legumes and Legume Products">Legumes and Legume Products</option>
+    <option value="Nut and Seed Products">Nut and Seed Products</option>
+    <option value="Pork Products">Pork Products</option>
+    <option value="Poultry Products">Poultry Products</option>
+    <option value="Sausages and Luncheon Meats">Sausages and Luncheon Meats</option>
+    <option value="Snacks">Snacks</option>
+    <option value="Soups, Sauces, and Gravies">Soups, Sauces, and Gravies</option>
+    <option value="Spices and Herbs">Spices and Herbs</option>
+    <option value="Sweets">Sweets</option>
+    <option value="Vegetables and Vegetable Products">Vegetables and Vegetable Products</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+
+
+
+<!-- 10. Returns all of the people on a certain plan-->
+<p style="font-family:verdana;">
+10. Show all people that belong to a certain plan.
+The script that runs when you search a plan is <tt>search_people_on_plan.php<tt>.
+<p>
+<form action="https://mpcs53001.cs.uchicago.edu/~atinn/search_people_on_plan.php">
+<b>Search people by type from the dropdown:</b><br>
+
+  <select name="Type">
+    <option value="Beginner">Beginner</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Advanced">Advanced</option>
+    <option value="Arm Blaster">Arm Blaster</option>
+    <option value="Weight loss">Weight loss</option>
+    <option value="Home Body">Home Body</option>
+    <option value="Bench 300">Bench 300</option>
+    <option value="#freakmode">#freakmode</option>
+    <option value="Triathlete">Triathlete</option>
+    <option value="Size gainer">Size gainer</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+<hr>
+
+</body>
+</html>

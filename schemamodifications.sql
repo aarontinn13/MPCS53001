@@ -1,0 +1,22 @@
+-- Add Column
+ALTER TABLE Person
+ADD COLUMN `Address` VARCHAR(100) NOT NULL 
+    AFTER `Age`;
+    
+ALTER TABLE Person
+ADD COLUMN `WeightUnit` VARCHAR(45) NOT NULL 
+    AFTER `Weight`;
+
+
+-- Alter Column
+ALTER TABLE Does
+CHANGE COLUMN `Sets` `Sets` INT NULL DEFAULT NULL ,
+CHANGE COLUMN `Reps` `Reps` INT NULL DEFAULT NULL ;
+
+ALTER TABLE Person 
+CHANGE COLUMN `Weight` `Weight` INT(10) NOT NULL ;
+
+
+-- Delete Column
+ALTER TABLE Does
+DROP COLUMN `test`;

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delete Data</title>
+</head>
+
+<body style="background-color:RoyalBlue ; font-family:verdana; color:AliceBlue;">
+
+<h1>
+DELETE existing tuples in the<br>
+Bodybuilding Database
+</h1>
+<hr>
+
+<h2 style="color:Coral;">WARNING : DELETE TUPLES WITH CAUTION</h2>
+<hr>
+
+<!-- 7. DELETE existing tuple in the table 'Person' -->
+<h2>
+7. DELETE an existing Person from the 'Person' table.
+</h2>
+<br>
+<p>
+<b>- You can delete People from the database.</b> <br> <br>
+- When deleting someone from the Persons, table (<tt>delete_email</tt>) will be triggered to delete from both Eats and Does as well.</b> <br> <br>
+- The script that runs when you press the <it>Submit</it>
+button is (<tt>7delete_person.php</tt>).<br><br>
+- You can access the table 'Person' to search for all emails in the system before deletion<br> or to confirm deletion from the table here:
+<a style="color:Coral" href="https://mpcs53001.cs.uchicago.edu/~atinn/list_all_people.php"> DJ Table</a><br><br>
+</p>
+
+<form method="get" action="https://mpcs53001.cs.uchicago.edu/~atinn/7delete_person.php">
+
+    <label for="email">(DELETE) Email :</label>
+    <input name="email" type="text" /> <br><br>
+
+    <input type="submit" value="Submit"/>
+</form>
+<hr>
+
+
+<!-- 8. DELETE existing tuple in table 'Eats' -->
+<h2>
+8. DELETE an existing meal activity by a Person from the 'Eats' table.
+</h2>
+<br>
+<p>
+<b>- You can delete meal activity from a Person in the database.</b> <br><br>
+ - The script that runs when you press the <it>Submit</it>
+button is (<tt>8_delete_eat.php</tt>).<br><br>
+- You can access the table 'Eats' to search for tuples before deletion<br> or to confirm deletion from the table here:
+<a style="color:Coral" href="https://mpcs53001.cs.uchicago.edu/~atinn/list_all_eating.php"> Eats Table</a><br><br>
+
+</p>
+
+<form method="get" action="https://mpcs53001.cs.uchicago.edu/~atinn/8delete_eat.php">
+
+    <label for="email">(DELETE) Email :</label>
+    <input name="email" type="text" /> <br><br>
+
+    <label for="datetime">(DELETE) Datetime (Format: YYYY-MM-DD HH:MM:SS) :</label>
+    <input name="datetime" type="text" /> <br><br>
+
+    <label for="mealname">(DELETE) Meal Name :</label>
+    <input name="mealname" type="text" /> <br><br>
+
+    <input type="submit" value="Submit"/>
+</form>
+<hr>
+
+
+
+
+
+<!-- 9. DELETE existing tuple in table 'Does' -->
+<h2>
+8. DELETE an existing meal activity by a Person from the 'Eats' table.
+</h2>
+<br>
+<p>
+<b>- You can delete workout activity from a Person in the database.</b> <br><br>
+ - The script that runs when you press the <it>Submit</it>
+button is (<tt>8_delete_activity.php</tt>).<br><br>
+- You can access the table 'Does' to search for tuples before deletion<br> or to confirm deletion from the table here:
+<a style="color:Coral" href="https://mpcs53001.cs.uchicago.edu/~atinn/list_all_activity.php"> Does Table</a><br><br>
+
+</p>
+
+<form method="get" action="https://mpcs53001.cs.uchicago.edu/~atinn/8delete_activity.php">
+
+    <label for="email">(DELETE) Email :</label>
+    <input name="email" type="text" /> <br><br>
+
+    <label for="datetime">(DELETE) Datetime (Format: YYYY-MM-DD HH:MM:SS) :</label>
+    <input name="datetime" type="text" /> <br><br>
+
+
+    <input type="submit" value="Submit"/>
+</form>
+<hr>
+
+
+
+
+
+
+</body>
+</html>

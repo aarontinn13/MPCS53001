@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Update Data</title>
+</head>
+
+<body style="background-color:DarkSlateGray; font-family:verdana; color:LightGreen ">
+
+<h1>
+Update existing tuples in the<br>
+Bodybuilding Database
+</h1>
+<hr>
+
+
+<!-- 4. UPDATE Person Table -->
+<h2>
+5. UPDATE the information in the 'Person' table.
+</h2>
+<br>
+<p>
+<b>- You can update the information of a person in the Person in the database. </b> <br><br>
+- This database tracks all the users in the system. <br>
+If the updating the weight, <tt>weight_change</tt>
+will be triggered in MySQL database and will track the change in weight and time stamp it in a new table <tt>Person_weight_change</tt>. <br>
+- The script that runs when you press the <it>Submit</it>
+button is (<tt>4update_person.php</tt>).
+</p>
+
+<form method="get" action="https://mpcs53001.cs.uchicago.edu/~atinn/4update_person.php">
+
+  <label for="email">Email :</label>
+  <input name="email" type="text" /> <br><br>
+
+  <label for="first_name">First Name :</label>
+  <input name="first_name" type="text" /> <br><br>
+
+  <label for="last_name">Last Name :</label>
+  <input name="last_name" type="text" /> <br><br>
+
+  <label for="age">Age :</label>
+  <input type="number" name="age" min="1" max="999" step="1" value="100" /> <br><br>
+
+  <label for="address">Address :</label>
+  <input name="address" type="text" /> <br><br>
+
+  <label for="weight">Weight :</label>
+  <input type="number" name="weight" min="1" max="999" step="1" value="100" /> <br><br>
+
+  <label for="weightunit">Unit :</label><br>
+  <input type="radio" name="Unit" value="Pounds"> Pounds<br>
+  <input type="radio" name="gender" value="Kilograms"> Kilograms<br>
+
+  <label for="planid">Plan ID :</label>
+  <input type="number" name="planid" min="1" max="999" step="1" value="100" /> <br><br>
+
+    <input type="submit" value="Submit"/>
+</form>
+<hr>
+
+
+
+<!-- 5. UPDATE Eats Table -->
+<h2>
+5. UPDATE the information in the 'Eats' table.
+</h2>
+<br>
+<p>
+<b>- You can update the information of a person in the Eats database. </b> <br><br>
+- This database tracks all the activity of the users by what they ate in the system. <br>
+- The script that runs when you press the <it>Submit</it>
+button is (<tt>5update_eat.php</tt>).
+</p>
+
+<form method="get" action="https://mpcs53001.cs.uchicago.edu/~atinn/5update_eat.php">
+
+  <label for="email">Email :</label>
+  <input name="email" type="text" /> <br><br>
+
+  <label for="datetime">Date Time (Format: YYYY:MM:DD hh:mm:ss) :</label>
+  <input name="datetime" type="text" /> <br><br>
+
+  <label for="mealname">Meal Name :</label>
+  <input name="mealname" type="text" /> <br><br>
+
+  <label for="first_name">First Name :</label>
+  <input name="first_name" type="text" /> <br><br>
+
+  <label for="last_name">Last Name :</label>
+  <input name="last_name" type="text" /> <br><br>
+
+  <label for="amount">Amount :</label>
+  <input type="number" name="amount" min="1" max="999" step="1" value="100" /> <br><br>
+
+  <label for="unit">Unit :</label>
+  <input type="number" name="unit" min="1" max="999" step="1" value="100" /> <br><br>
+
+    <input type="submit" value="Submit"/>
+</form>
+<hr>
+
+
+
+
+
+<!-- 6. UPDATE Does Table -->
+<h2>
+5. UPDATE the information in the 'Does' table.
+</h2>
+<br>
+<p>
+<b>- You can update the information of a person in the Does database. </b> <br><br>
+- This database tracks all the activity of the users in the system. <br>
+- The script that runs when you press the <it>Submit</it>
+button is (<tt>6update_activity.php</tt>).
+</p>
+
+<form method="get" action="https://mpcs53001.cs.uchicago.edu/~atinn/6update_activity.php">
+
+  <label for="email">Email :</label>
+  <input name="email" type="text" /> <br><br>
+
+  <label for="datetime">Date Time (Format: YYYY:MM:DD hh:mm:ss) :</label>
+  <input name="datetime" type="text" /> <br><br>
+
+  <label for="first_name">First Name :</label>
+  <input name="first_name" type="text" /> <br><br>
+
+  <label for="last_name">Last Name :</label>
+  <input name="last_name" type="text" /> <br><br>
+
+  <label for="activity_name">Activity Name :</label>
+  <input name="activity_name" type="text" /> <br><br>
+
+  <label for="length">Length(Minutes) :</label>
+  <input type="number" name="length" min="1" max="999" step="1" value="100" /> <br><br>
+
+  <label for="sets">Sets :</label>
+  <input type="number" name="sets" min="1" max="999" step="1" value="100" /> <br><br>
+
+  <label for="reps">Reps :</label>
+  <input type="number" name="reps" min="1" max="999" step="1" value="100" /> <br><br>
+
+    <input type="submit" value="Submit"/>
+</form>
+<hr>
+
+
+</body>
+</html>
